@@ -1,0 +1,235 @@
+/* Mobile - Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .MobileMenu-wrap {
+        display: block;
+    }
+
+    .App_widthslidebarContent {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+
+    .postItem_author {
+        display: none;
+    }
+
+    .VideoItem_stats {
+        display: none;
+    }
+
+    .Slideshow_wrapper {
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .ScrollList_vertical .ScrollList_body {
+        display: flex !important;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding-bottom: 16px;
+    }
+
+    .row-2 {
+        flex-wrap: nowrap;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .c-12-2 {
+        flex: 0;
+    }
+
+    .col-2 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .Footer_column {
+        justify-content: left;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .NavBar_actionBtn {
+        padding: 8px 12px;
+        font-size: 1.8rem;
+        color: #707070;
+        display: block;
+    }
+
+    .NavBar_wrapper {
+        padding: 0 16px;
+    }
+    .Nav_actionsIcon {
+        margin: 0;
+        padding: 8px 12px;
+    }
+
+    .App_widthslidebarContent {
+        padding: 0 16px;
+    }
+
+    .Slideshow_left {
+        width: 382px;
+    }
+
+    .Slideshow_arraw.Slideshow_next,
+    .Slideshow_arraw.Slideshow_prev {
+        display: none;
+    }
+
+    .Slideshow_heading,
+    .Slideshow_desc {
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .Slideshow_desc {
+        -webkit-line-clamp: 2;
+    }
+
+    .MobileMenu_body {
+        width: 80%;
+    }
+
+    .MobileMenu_scrollable {
+        padding: 16px 0 0 16px;
+    }
+
+    .MobileMenu_list {
+        padding: 8px 0;
+        /* margin-bottom: 0; */
+    }
+
+    .MobileMenu_user {
+        padding: 16px 0 0 20px;
+    }
+
+    .index-modal-list li a {
+        padding: 16px 0 16px 16px;
+    }
+
+    .Home_wrapper {
+        margin-top: 60px;
+        padding: 0 0 36px;
+    }
+
+    .ScrollList_heading {
+        margin: 16px auto 16px 0;
+    }
+
+    .ScrollList_heading a {
+        font-size: 2rem;
+    }
+
+    .ScrollList_view-all {
+        display: none;
+    }
+
+    .ScrollList_View-all-icon {
+        background-color: #f3f3f3;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        margin-left: 3px;
+        margin-right: 2px;
+        position: relative;
+        top: -2px;
+        text-align: center;
+    }
+
+    .ScrollList_body {
+        min-height: 180px;
+    }
+
+    .commonItem_wrapper {
+        margin-bottom: 0;
+        width: 60vw;
+    }
+
+    .Footer_wrapper {
+        padding: 48px 16px 40px;
+    }
+
+    .Footer_bottom {
+        flex-direction: column;
+    }
+
+    .Footer_social-list {
+        margin: 12px 0 0;
+    }
+
+    .Footer_heading {
+        margin-top: 36px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .NavBar_wrapper {
+        padding: 0 32px;
+    }
+
+    .Nav_actionsIcon {
+        margin: 0;
+        padding: 8px;
+    }
+
+    .Home_wrapper {
+        padding: 0 0 50px;
+    }
+
+    .commonItem_wrapper {
+        margin-bottom: 24px;
+    }
+
+    .Slideshow_arraw.Slideshow_prev,
+    .Slideshow_arraw.Slideshow_next {
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+    }
+
+    body .slick-dots {
+        left: 0;
+    }
+
+    .ScrollList_body {
+        min-height: 200px;
+    }
+
+    .commonItem_wrapper {
+        margin-bottom: 0;
+        width: 35vw;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .slick-slide {
+        width: calc(100% - 636px) !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2800px) {    
+    .slick-slide {
+        width: calc(100% - 0px) !important;
+    }
+}

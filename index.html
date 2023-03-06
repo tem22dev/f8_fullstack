@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/images/f8-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root" style="height: auto !important;">
+        <!-- Header nav bar -->
+        <div class="NavBar_wrapper">
+            <!-- Mobile menu -->
+            <div class="MobileMenu-wrap">
+                <label for="MobileMenu_check" class="MobileMenu_wrap-icon">
+                    <i class="fa-solid fa-bars"></i>
+                    
+                </label>
+                <input type="checkbox" hidden class="MobileMenu_input" id="MobileMenu_check">
+
+                <label for="MobileMenu_check" class="MobileMenu_modal"></label>
+
+                <label for="MobileMenu_check" class="MobileMenu_body">
+                    <div  class="MobileMenu_scrollable">
+                        <div class="MobileMenu_user">
+                            <img src="https://lh3.googleusercontent.com/ogw/ADea4I5a-ubgNL7ehWhc0X49ypmzO2c6g5GZ0_hugzVXIA=s32-c-mo" alt="" class="MobileMenu_avatar">
+                            <h6 class="MobileMenu_fullName">Trung em Nguyen</h6>
+                        </div>
+                        <div class="MobileMenu_listWrap">
+                            <ul class="index-modal-list MobileMenu_list">
+                                <li class="MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-book-open"></i>
+                                        <span>Khóa học của tôi</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="index-modal-list MobileMenu_list">
+                                <li class="index-modal-list MobileMenu_item">
+                                    <a href="#" class="MobileMenu_active">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="index-modal-list MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-road"></i>
+                                        <span>Lộ trình</span>
+                                    </a>
+                                </li>
+                                <li class="index-modal-list MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                        <span>Khóa học</span>
+                                    </a>
+                                </li>
+                                <li class="index-modal-list MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-newspaper"></i>
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="index-modal-list MobileMenu_list">
+                                <li class="MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <span>Bài viết đã lưu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="index-modal-list MobileMenu_list">
+                                <li class="MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <span>Giới thiệu</span>
+                                    </a>
+                                </li>
+                                <li class="MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span>Cơ hội việc làm</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="index-modal-list MobileMenu_list">
+                                <li class="MobileMenu_item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Logo -->
+            <div class="NavBar_logo hide-on-mobile-tablet">
+                <a href="#" class="NavBar_logo-link">
+                    <img src="./assets/images/f8-logo.png" alt="F8-Logo">
+                </a>
+                <h4 class="NavBar_logoHeading">Học Lập Trình Để Đi Làm</h4>
+            </div>
+    
+            <!-- Search -->
+            <div class="NavBar_search">
+                <div class="NavBar_searchWrapper hide-on-mobile">
+                    <div class="Search_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm khóa học, bài viết, video, ..." class="Search_input">
+                </div>
+            </div>
+    
+            <!-- Actions -->
+            <div class="NavBar_actions">
+                <a href="#" class="NavBar_actionBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <button class="NavBar_action-btn hide-on-mobile-tablet">Khóa học của tôi</button>
+                <ul class="NavBar_actionCourse-list">
+                    <div class="NavBar_actionCourse-heading">
+                        <h3 class="NavBar_actionCourse-heading-name">Khóa học của tôi</h3>
+                        <a href="#" class="NavBar_actionCourse-view">Xem tất cả</a>
+                    </div>
+                    <div class="NavBar_actionCourse-content">
+                        <li class="NavBar_actionCourse-item">
+                            <a href="#" class="NavBar_actionCourse-link">
+                                <img class="NavBar_actionCourse-img" src="https://files.fullstack.edu.vn/f8-prod/courses/1.png" alt="">
+                            </a>
+                            <div class="NavBar_actionCourse-time">
+                                <a href="#" class="NavBar_actionCourse-name">Lập Trình JavaScript Cơ Bản</a>
+                                <p class="NavBar_actionCourse-last-completed">Học cách đây một ngày trước</p>
+                                <div class="NavBar_actionCourse-progress-wrapper">
+                                    <div class="NavBar_actionCourse-progress"></div>
+                                    <div class="NavBar-progress-percent">37%</div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="NavBar_actionCourse-item">
+                            <a href="#" class="NavBar_actionCourse-link">
+                                <img class="NavBar_actionCourse-img" src="https://files.fullstack.edu.vn/f8-prod/courses/3.png" alt="">
+                            </a>
+                            <div class="NavBar_actionCourse-time">
+                                <a href="#" class="NavBar_actionCourse-name">Responsive Với Grid System</a>
+                                <p class="NavBar_actionCourse-last-completed">Học cách đây một ngày trước</p>
+                                <div class="NavBar_actionCourse-progress-wrapper">
+                                    <div class="NavBar_actionCourse-progress"></div>
+                                    <div class="NavBar-progress-percent">37%</div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="NavBar_actionCourse-item">
+                            <a href="#" class="NavBar_actionCourse-link">
+                                <img class="NavBar_actionCourse-img" src="https://files.fullstack.edu.vn/f8-prod/courses/2.png" alt="">
+                            </a>
+                            <div class="NavBar_actionCourse-time">
+                                <a href="#" class="NavBar_actionCourse-name">HTML, CSS từ Zero đến Hero</a>
+                                <p class="NavBar_actionCourse-last-completed">Học cách đây một ngày trước</p>
+                                <div class="NavBar_actionCourse-progress-wrapper">
+                                    <div class="NavBar_actionCourse-progress"></div>
+                                    <div class="NavBar-progress-percent">37%</div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="NavBar_actionCourse-item">
+                            <a href="#" class="NavBar_actionCourse-link">
+                                <img class="NavBar_actionCourse-img" src="https://files.fullstack.edu.vn/f8-prod/courses/7.png" alt="">
+                            </a>
+                            <div class="NavBar_actionCourse-time">
+                                <a href="#" class="NavBar_actionCourse-name">Kiến Thức Nhập Môn IT</a>
+                                <p class="NavBar_actionCourse-last-completed">Học cách đây một ngày trước</p>
+                                <div class="NavBar_actionCourse-progress-wrapper">
+                                    <div class="NavBar_actionCourse-progress"></div>
+                                    <div class="NavBar-progress-percent">37%</div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="NavBar_actionCourse-item">
+                            <a href="#" class="NavBar_actionCourse-link">
+                                <img class="NavBar_actionCourse-img" src="https://files.fullstack.edu.vn/f8-prod/courses/14/624faac11d109.png" alt="">
+                            </a>
+                            <div class="NavBar_actionCourse-time">
+                                <a href="#" class="NavBar_actionCourse-name">Làm việc với Terminal & Ubuntu</a>
+                                <p class="NavBar_actionCourse-last-completed">Học cách đây một ngày trước</p>
+                                <div class="NavBar_actionCourse-progress-wrapper">
+                                    <div class="NavBar_actionCourse-progress"></div>
+                                    <div class="NavBar-progress-percent">37%</div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <div class="Nav_actionsIcon">
+                    <i class="fa-solid fa-bell"></i>
+                    <ul class="Nav_actions_model-list">
+                        <header class="Nav_model_header">
+                            <h4 class="Nav_model-heading">Thông báo</h4>
+                            <span class="Nav_model-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                            <div class="Nav_model_wrapper-icon-model">
+                                <ul class="Nav_model_wrapper-icon-list">
+                                    <li class="Nav_model_wrapper-icon-item">
+                                        <div class="Nav_model_wrapper-icon-wrap">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="Nav_model_wrapper-icon-content">Đánh dấu tất cả đã đọc</p>
+                                        </div>
+                                    </li>
+                                </ul>                            
+                            </div>
+                        </header>
+                        <div class="Nav_actions_model-content">
+                            <li class="Nav_actions_model-item">
+                                <div class="Nav_actions_model-img">
+                                    <img src="./assets/images/f8_logo.png" alt="F8">
+                                </div>
+                                <div class="Nav_actions_model-wrapper">
+                                    <p class="Nav_actions_model-content-text">Chào mừng đã gia nhập F8. Hãy luôn đam mê, kiên trì và theo đuổi mục tiêu tới cùng bạn nhé ❤️</p>
+                                    <span class="Nav_actions_model-createdTime">3 tháng trước</span>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="Nav_actionsAvartar hide-on-mobile-tablet">
+                    <img src="https://lh3.googleusercontent.com/ogw/ADea4I5a-ubgNL7ehWhc0X49ypmzO2c6g5GZ0_hugzVXIA=s32-c-mo" alt="" class="Nav_actions-img">
+                    <ul class="Nav_actionsWrapper-list Nav_userMenu-wrapper">
+                        <div class="Nav_actionsWrapper-user-img">
+                            <img src="https://lh3.googleusercontent.com/ogw/ADea4I5a-ubgNL7ehWhc0X49ypmzO2c6g5GZ0_hugzVXIA=s32-c-mo" alt="">
+                            <div class="Nav_actionsWrapper-user-content">
+                                <div class="Nav_actionsWrapper-user-name">Trung em Nguyen</div>
+                                <div class="Nav_actionsWrapper-user-email">@trungemnguyen</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="Nav_actionsWrapper-user-menu">
+                            <li class="Nav_actionsWrapper-user-item">
+                                <a href="#" class="Nav_actionsWrapper-user-link">Trang cá nhân</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="Nav_actionsWrapper-user-menu">
+                            <li class="Nav_actionsWrapper-user-item">
+                                <a href="#" class="Nav_actionsWrapper-user-link">Viết blog</a>
+                            </li>
+                            <li class="Nav_actionsWrapper-user-item">
+                                <a href="#" class="Nav_actionsWrapper-user-link">Bài viết của tôi</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="Nav_actionsWrapper-user-menu">
+                            <li class="Nav_actionsWrapper-user-item">
+                                <a href="#" class="Nav_actionsWrapper-user-link">Bài viết đã lưu</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="Nav_actionsWrapper-user-menu">
+                            <li class="Nav_actionsWrapper-user-item">
+                                <a href="#" class="Nav_actionsWrapper-user-link">Cài đặt</a>
+                            </li>
+                            <li class="Nav_actionsWrapper-user-item">
+                                <a href="#" class="Nav_actionsWrapper-user-link">Đăng xuất</a>
+                            </li>
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Container -->
+        <div class="App_withSidebar">
+            <!-- App Slidebar -->
+            <div class="App_slidebarWrap hide-on-mobile-tablet">
+                <div class="Slidebar_wrapper">
+                    <div>
+                        <div class="CreateButton_wrapper">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <ul class="Slidebar_list">
+                        <li>
+                            <a href="#" class="Slidebar_active Slidebar_action">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="Slidebar_active">
+                                <i class="fa-solid fa-road"></i>
+                                <span>Lộ trình</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="Slidebar_active">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <span>Học</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="Slidebar_active">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- App content -->
+            <div class="App_widthslidebarContent">
+                <section class="grid wide" style="max-width: 1920px;">
+                    <!-- Slidebar show -->
+                    <div class="Home_slideShow">
+                        <div class="Slideshow_wrapper">
+                            <div class="slick-slider slick-initialized">
+                                <div class="Slideshow_arraw Slideshow_prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+
+                                <div class="slick-list">
+                                    <div class="slick-track" style="width: 1920px; opacity: 1;transform: translate3d(0px, 0px, 0px);">
+                                        <!-- <div class="slick-slide" style="outline: none; max-width: 1920px">
+                                            <div>
+                                                <div style="width: 100%; display: inline-block">
+                                                    <div class="Slideshow_item" style="background: linear-gradient(to right, rgb(118, 18, 255), rgb(5, 178, 255));">
+                                                        <div class="Slideshow_left">
+                                                            <h2 class="Slideshow_heading">
+                                                                <a href="#">Thành Quả của Học Viên</a>
+                                                            </h2>
+                                                            <p class="Slideshow_desc">
+                                                                Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không là ngoại lệ.
+                                                            </p>
+                                                            <div>
+                                                                <a href="#" class="Slideshow_ctaBtn Slideshow_ctaBtn-stu">Xem thành quả</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="Slideshow_right">
+                                                            <a href="#">
+                                                                <img src="https://files.fullstack.edu.vn/f8-prod/banners/Banner_01_2.png" alt="Thành quả của học viên" class="Slideshow_img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <!-- <div class="slick-slide" style="outline: none; max-width: 1920px">
+                                            <div>
+                                                <div style="width: 100%; display: inline-block">
+                                                    <div class="Slideshow_item" style="background: linear-gradient(to right, rgb(254, 33, 94), rgb(255, 148, 2));">
+                                                        <div class="Slideshow_left">
+                                                            <h2 class="Slideshow_heading">
+                                                                <a href="">F8 trên Youtube</a>
+                                                            </h2>
+                                                            <p class="Slideshow_desc">
+                                                                F8 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình F8 sẽ ở đó.
+                                                            </p>
+                                                            <div>
+                                                                <a href="" class="Slideshow_ctaBtn Slideshow_ctaBtn-you">Truy cập kênh</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="Slideshow_right">
+                                                            <a href="">
+                                                                <img src="https://files.fullstack.edu.vn/f8-prod/banners/Banner_03_youtube.png" alt="F8 trên Youtube" class="Slideshow_img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <!-- <div class="slick-slide" style="outline: none; max-width: 1920px">
+                                            <div>
+                                                <div style="width: 100%; display: inline-block">
+                                                    <div class="Slideshow_item" style="background: linear-gradient(to right, rgb(0, 126, 254), rgb(6, 195, 254));;">
+                                                        <div class="Slideshow_left">
+                                                            <h2 class="Slideshow_heading">
+                                                                <a href="">F8 trên Facebook</a>
+                                                            </h2>
+                                                            <p class="Slideshow_desc">
+                                                                F8 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình F8 sẽ ở đó.
+                                                            </p>
+                                                            <div>
+                                                                <a href="" class="Slideshow_ctaBtn Slideshow_ctaBtn-face">Truy cập nhóm</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="Slideshow_right">
+                                                            <a href="">
+                                                                <img src="https://files.fullstack.edu.vn/f8-prod/banners/Banner_04_2.png" alt="F8 trên Facebook" class="Slideshow_img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="slick-slide" style="outline: none; max-width: 1920px">
+                                            <div>
+                                                <div style="width: 100%; display: inline-block">
+                                                    <div class="Slideshow_item" style="background: linear-gradient(to right, rgb(40, 119, 250), rgb(103, 23, 205));">
+                                                        <div class="Slideshow_left">
+                                                            <h2 class="Slideshow_heading">
+                                                                <a href="#">Học ReactJS Miễn Phí</a>
+                                                            </h2>
+                                                            <p class="Slideshow_desc">
+                                                                Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS.
+                                                            </p>
+                                                            <div>
+                                                                <a href="#" class="Slideshow_ctaBtn Slideshow_ctaBtn-react">Đăng ký ngay</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="Slideshow_right">
+                                                            <a href="#">
+                                                                <img src="https://files.fullstack.edu.vn/f8-prod/banners/Banner_web_ReactJS.png" alt="Học ReactJS Miễn Phí" class="Slideshow_img">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Slideshow_arraw Slideshow_next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+                                <ul class="slick-dots" style="display: block;">
+                                    <li>
+                                        <button></button>
+                                    </li>
+                                    <li class="hover">
+                                        <button class="hover-ac"></button>
+                                    </li>
+                                    <li>
+                                        <button></button>
+                                    </li>
+                                    <li>
+                                        <button></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wrapper content -->
+                    <div class="Home_wrapper">
+                        <div class="ScrollList_vertical">
+                            <!-- Heading -->
+                            <div>
+                                <p class="ScrollList_sub_heading">
+                                    <strong>211.660+</strong>
+                                    người khác đã học
+                                </p>
+                                <div class="ScrollList_heading_wrap">
+                                    <h2 class="ScrollList_heading">
+                                        <a href="#">
+                                            Lộ trình học Front-end
+                                            <span class="ScrollList_View-all-icon">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                            <span class="ScrollList_label">Mới</span>
+                                        </a>
+                                    </h2>
+                                    <a href="#" class="ScrollList_view-all">
+                                        Xem chi tiết
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="ScrollList_body">
+                                <section class="row row-2">
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Kiến Thức Nhập Môn IT" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/7.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Kiến Thức Nhập Môn IT</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>72.352</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="HTML, CSS từ Zero đến Hero" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/2.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">HTML, CSS từ Zero đến Hero</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>135.678</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Responsive Với Grid System" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/3.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Responsive Với Grid System</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>26.138</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Lập Trình JavaScript Cơ Bản" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/1.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Lập Trình JavaScript Cơ Bản</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>87.376</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Lập Trình JavaScript Nâng Cao" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/12.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Lập Trình JavaScript Nâng Cao</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>18.478</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Làm việc với Terminal & Ubuntu" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/14/624faac11d109.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Làm việc với Terminal & Ubuntu</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>5.153</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Xây Dựng Website với ReactJS" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/13/13.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Xây Dựng Website với ReactJS</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>38.625</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                        
+                        <div class="ScrollList_vertical">
+                            <!-- Heading -->
+                            <div>
+                                <div class="ScrollList_heading_wrap">
+                                    <h2 class="ScrollList_heading">
+                                        <a href="#">
+                                            Lộ trình học Back-end
+                                            <span class="ScrollList_View-all-icon">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                            <span class="ScrollList_label">Mới</span>
+                                        </a>
+                                    </h2>
+                                    <a href="#" class="ScrollList_view-all">
+                                        Xem chi tiết
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="ScrollList_body">
+                                <section class="row row-2">
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Kiến Thức Nhập Môn IT" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/7.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Kiến Thức Nhập Môn IT</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>72.352</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="HTML, CSS từ Zero đến Hero" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/2.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">HTML, CSS từ Zero đến Hero</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>135.678</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Lập Trình JavaScript Cơ Bản" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/1.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Lập Trình JavaScript Cơ Bản</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>87.376</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Lập Trình JavaScript Nâng Cao" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/12.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Lập Trình JavaScript Nâng Cao</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>18.478</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Làm việc với Terminal & Ubuntu" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/14/624faac11d109.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Làm việc với Terminal & Ubuntu</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>5.153</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Node & ExpressJS" style="background-image: url(	https://files.fullstack.edu.vn/f8-prod/courses/6.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Tiếp tục học</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Node & ExpressJS</a>
+                                            </h3>
+                                            <div class="courseItem_student_count">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span>22.238</span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="ScrollList_vertical">
+                            <!-- Heading -->
+                            <div>
+                                <div class="ScrollList_heading_wrap">
+                                    <h2 class="ScrollList_heading">
+                                        <a href="#">
+                                            Bài viết nổi bật 
+                                            <span class="ScrollList_View-all-icon">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>           
+                                        </a>
+                                    </h2>
+                                    <a href="#" class="ScrollList_view-all">
+                                        Xem chi tiết
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="ScrollList_body">
+                                <section class="row row-2">
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Tổng hợp các sản phẩm của học viên tại F8" style="background-image: url(	https://files.fullstack.edu.vn/f8-prod/blog_posts/65/6139fe28a9844.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Tổng hợp các sản phẩm của học viên tại F8</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png" alt="Sơn Đặng">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Sơn Đặng</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>6 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="[Phần 1] Tạo dự án ReactJS với Webpack và Babel" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/279/6153f692d366e.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">[Phần 1] Tạo dự án ReactJS với Webpack và Babel</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png" alt="Sơn Đặng">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Sơn Đặng</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>12 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Ký sự ngày thứ 25 học ở F8" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/51/6139c6453456e.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Ký sự ngày thứ 25 học ở F8 </a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://graph.facebook.com/1642531882604203/picture?width=400&height=400" alt="Sơn Sơn">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Sơn Sơn</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>1 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Các nguồn tài nguyên hữu ích cho 1 front-end developer" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/107/613a1f3685814.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Các nguồn tài nguyên hữu ích cho 1 front-end developer</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://graph.facebook.com/547825429409669/picture?width=400&height=400" alt="Vương Vương">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Vương Vương</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>2 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Cách đưa code lên GitHub và tạo GitHub Pages" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/677/615436b218d0a.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Cách đưa code lên GitHub và tạo GitHub Pages</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://static.fullstack.edu.vn/static/media/fallback-avatar.155cdb2376c5d99ea151.jpg" alt="Võ Minh Kha">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Võ Minh Kha</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>4 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Thời gian và Động lực" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/1671/61b6368983c16.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Thời gian và Động lực</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://files.fullstack.edu.vn/f8-prod/user_avatars/9143/6263caafdf588.jpg" alt="Dong Ngo">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Dong Ngo</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>6 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Tổng hợp tài liệu tự học tiếng anh cơ bản." style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/273/614043e523ad9.png);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Tổng hợp tài liệu tự học tiếng anh cơ bản.</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://files.fullstack.edu.vn/f8-prod/user_avatars/74901/626aa252cdb22.jpg" alt="Lê Thành Trung">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Lê Thành Trung</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>7 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Học như thế nào là phù hợp ?" style="background-image: url(https://files.fullstack.edu.vn/f8-prod/blog_posts/791/615de64de7e8f.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem bài viết</button>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Học như thế nào là phù hợp ?</a>
+                                            </h3>
+                                            <div class="postItem_author">
+                                                <a href="#">
+                                                    <img src="https://static.fullstack.edu.vn/static/media/fallback-avatar.155cdb2376c5d99ea151.jpg" alt="Tien Pham Ngoc">
+                                                </a>
+                                                <a href="#">
+                                                    <strong>Tien Pham Ngoc</strong>
+                                                    <span class="postItem_dot">.</span>
+                                                    <span>4 phút đọc</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="ScrollList_vertical">
+                            <!-- Heading -->
+                            <div>
+                                <div class="ScrollList_heading_wrap">
+                                    <h2 class="ScrollList_heading">
+                                        <a href="#">
+                                            Videos nổi bật
+                                            <span class="ScrollList_View-all-icon">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>            
+                                        </a>
+                                    </h2>
+                                    <a href="#" class="ScrollList_view-all">
+                                        Xem chi tiết
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="ScrollList_body">
+                                <section class="row row-2">
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title='"Code Thiếu Nhi Battle" Tranh Giành Trà Sữa Size L' style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/sgq7BH6WxL8/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>25:10</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">"Code Thiếu Nhi Battle" Tranh Giành Trà Sữa Size L</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>243.593</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>5.210</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>184</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Sinh viên IT đi thực tập tại doanh nghiệp cần biết những gì?" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/YH-E4Y3EaT4/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>34:51</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Sinh viên IT đi thực tập tại doanh nghiệp cần biết những gì?</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>197.974</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>5.168</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>226</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Phương pháp học lập trình của Admin F8?" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/DpvYHLUiZpc/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>24:06</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Phương pháp học lập trình của Admin F8?</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>79.959</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>4.350</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>274</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Làm sao để có thu nhập cao và đi xa hơn trong ngành IT?" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/oF7isq9IjZM/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>25:40</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Làm sao để có thu nhập cao và đi xa hơn trong ngành IT?</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>60.718</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>2.773</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>222</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Bạn sẽ làm được gì sau khóa học?" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/R6plN3FvzFY/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>03:15</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Bạn sẽ làm được gì sau khóa học?</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>415.091</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>2.671</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>108</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="ReactJS là gì? Tại sao nên học ReactJS?" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>10:41</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">ReactJS là gì? Tại sao nên học ReactJS?</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>145.000</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>2.355</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>340</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Javascript có thể làm được gì? Giới thiệu qua về trang F8 | Học lập trình Javascript cơ bản" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/0SJE9dYdpps/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>07:53</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Javascript có thể làm được gì? Giới thiệu qua về trang F8 | Học lập trình Javascript cơ bản</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>381.978</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>2.246</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="col col-2 l-3 m-4 c-12 c-12-2">
+                                        <div class="commonItem_wrapper">
+                                            <a href="#" class="commonItem_thumb" title="Lần trở lại này F8 sẽ làm gì cho các bạn? Học lập trình để đi làm tại F8 nào!" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0) 50%), url(https://i.ytimg.com/vi/ZGmpvhqYSDU/maxresdefault.jpg);">
+                                                <button class="Button_btn commonItem_cta_btn">Xem video</button>
+                                                <div class="VideoItem_video-info">
+                                                    <div class="VideoItem_play_wrap">
+                                                        <i class="VideoItem_play_icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="VideoItem_duration">
+                                                        <span>06:36</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <h3 class="commonItem_title">
+                                                <a href="#">Lần trở lại này F8 sẽ làm gì cho các bạn? Học lập trình để đi làm tại F8 nào!</a>
+                                            </h3>
+                                            <div class="VideoItem_stats">
+                                                <div>
+                                                    <i class="fa-solid fa-eye"></i>
+                                                    <span>18.935</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-thumbs-up"></i>
+                                                    <span>1.997</span>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-comment"></i>
+                                                    <span>401</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="Footer_wrapper" style="height: auto !important;">
+            <section class="grid wide2 wide" style="max-width: 1100px; height: auto !important;">
+                <section class="row">
+                    <section class="col l-3 m-6 c-12">
+                        <div class="Footer_column">
+                            <div>
+                                <div class="Footer_column_top">
+                                    <a href="#">
+                                        <img src="https://static.fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png" alt="F8" class="Footer_top_logo">
+                                    </a>
+                                    <h2 class="Footer_top_slogan">Học Lập Trình Để Đi Làm</h2>
+                                </div>
+                                <ul class="Footer_list">
+                                    <li>
+                                        Điện thoại: 
+                                        <a href="tel:0246.329.1102">0246.329.1102</a>
+                                    </li>
+                                    <li>
+                                        Email: 
+                                        <a href="mailto:contact@fullstack.edu.vn">contact@fullstack.edu.vn</a>
+                                    </li>
+                                    <li>Địa chỉ: Nhà D9, lô A10, Nam Trung Yên, Trung Hòa, Cầu Giấy, Hà Nội</li>
+                                    <li>
+                                        <a href="#" title="DMCA Protected">
+                                            <img src="https://static.fullstack.edu.vn/static/media/dmca.2593d9ecf1c982e3c3a2.png" alt="DMCA" class="Footer_dmca">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col l-3 m-6 c-12">
+                        <div class="Footer_column">
+                            <div>
+                                <h2 class="Footer_heading">VỀ F8</h2>
+                                <ul class="Footer_list">
+                                    <li> 
+                                        <a href="#">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cơ hội việc làm</a>
+                                    </li>
+                                    <li>
+                                        Đối tác
+                                        <ul class="Footer_sub_menu">
+                                            <li>
+                                                <a href="#" title="Tải phần mềm Macbook">Tải phần mềm Macbook</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Tải phần mềm Macbook">Evondev</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col l-3 m-6 c-12">
+                        <div class="Footer_column">
+                            <div>
+                                <h2 class="Footer_heading">HỖ TRỢ</h2>
+                                <ul class="Footer_list">
+                                    <li> 
+                                        <a href="#">Liên hệ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Điều khoản</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col l-3 m-6 c-12">
+                        <div class="Footer_column">
+                            <div>
+                                <h2 class="Footer_heading">CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</h2>
+                                <ul class="Footer_list">
+                                    <li> 
+                                        Mã số thuế: 0109922901
+                                    </li>
+                                    <li>
+                                        Ngày thành lập: 04/03/2022
+                                    </li>
+                                    <li>
+                                        Lĩnh vực: Công nghệ, giáo dục, lập trình. F8 xây dựng và phát triển những sản phẩm mang lại giá trị cho cộng đồng.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="row">
+                    <section class="col l-12 m-12 c-12">
+                        <div class="Footer_bottom">
+                            <p class="Footer_copyright">
+                                © 2018 - 
+                                2022 
+                                F8. Nền tảng học lập trình hàng đầu Việt Nam
+                            </p>
+                            <div class="Footer_social-list">
+                                <a href="#" class="Footer_social-item Footer_youtube">
+                                    <i class="fa-brands fa-youtube-square"></i>
+                                </a>
+                                <a href="#" class="Footer_social-item Footer_facebook">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </a>
+                                <a href="#" class="Footer_social-item Footer_tiktok">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="row">
+                    <div class="Footer_banner" style="height: auto !important;">
+                        <div class="banner_img"></div>
+                    </div>
+                </section>
+            </section>
+        </footer>
+    </div>
+
+    
+    
+</body>
+</html>

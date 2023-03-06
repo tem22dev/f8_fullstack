@@ -1,0 +1,45 @@
+:root {
+    --text-color: #333;
+    --white-color: #fff;
+    --boder-color: #dbdbdb;
+    --black-color: #000;
+    --primary-color: #f05123;
+    --gray-color: #666;
+
+    --cta-hover-student-color: #7612ff;
+    --cta-hover-youtube-color: #fe215e;
+    --cta-hover-reactjs-color: #2877fa;
+    --cta-hover-face-color: #2877fa;
+    --hover-color: rgba(22,24,35,.05);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: overlay;
+    overscroll-behavior: none;
+    touch-action: manipulation;
+    -webkit-user-drag: none;
+    -ms-content-zooming: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
